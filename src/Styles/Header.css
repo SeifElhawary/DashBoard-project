@@ -1,0 +1,77 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;  
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 100;
+  transition: all 0.3s ease;
+    background-color: rgb(246, 244, 244);
+  span{
+    cursor: pointer;
+  }
+  .left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .profileImg{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: contain;
+        border: 2px solid blue;
+    }
+    .hi{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: gray;
+    }
+    .noti{
+        position: relative;
+        .point{
+            position: absolute;
+            top: 4px;
+            right: 2px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: red;
+        }
+    }
+  }
+}
+.settingBtn{
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width:444px){
+  .right{
+    gap: 5px;
+    .hi{
+      gap: 5px;
+    }
+    .profileImg{
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .header{
+    padding: 5px 10px;
+  }
+}
