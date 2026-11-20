@@ -1,0 +1,172 @@
+.slideBar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  padding: 15px 10px 10px 10px;
+  background-color: rgb(249, 249, 249);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+.slideBar .title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-right: 42px;
+  box-sizing: border-box;
+}
+
+.slideBar .closeBtn {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.slideBar .title .name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.slideBar .title .name h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.slideBar .title .name svg {
+  font-size: 2rem;
+}
+
+
+
+.slideBar .closeBtn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.slideBar .linkName{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .linkTitle{
+        margin-bottom: 15px;
+        font-weight: 500;
+        color: rgb(140, 136, 136);
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+    .a{
+        text-decoration: none;
+        color: rgb(23, 23, 23);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 18px;
+        transition: all 0.3s ease-in;
+        width: 100%;
+        height: 40px;
+        padding: 0 5px;
+        border-radius: 8px;
+        text-transform: capitalize;
+    }
+    .a:hover{
+        background-color: rgb(243, 239, 239);
+    }
+    .a.dark{
+      color: white;
+    }
+    .a.dark:hover{
+      background-color: rgb(57, 54, 54);
+    }
+}
+.slideBar.hidden{
+    transform: translateX(-500px);
+}
+@media (max-width: 1024px) {
+  .slideBar {
+    width: 280px;
+    box-sizing: border-box;
+  }
+
+  .slideBar .title .name h1 {
+    font-size: 1.3rem;
+  }
+
+  .slideBar .title .name svg {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideBar {
+    width: 260px;
+    padding: 15px 12px;
+    box-sizing: border-box;
+  }
+
+  .slideBar .title {
+    margin-bottom: 22px;
+  }
+
+  .slideBar .linkName .a {
+    gap: 14px;
+    margin-bottom: 12px;
+    height: 38px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+  }
+
+  .slideBar.hidden {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 444px) {
+  .slideBar {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 15px 14px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .slideBar .title {
+    width: 100%;
+  }
+
+  .slideBar.hidden {
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 1024px) {
+  .Home {
+    width: 100% !important;
+    margin-left: 0 !important;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home {
+    width: 100% !important;
+    margin-left: 0 !important;
+    box-sizing: border-box;
+  }
+}
