@@ -1,0 +1,70 @@
+.chart-container {
+  padding: 20px;
+  margin: 150px auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease;
+  box-sizing: border-box;
+}
+
+.chart-header {
+  margin-bottom: 18px;
+}
+
+.chart-header h2 {
+  margin: 0 0 4px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.chart-header p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.chart-container.dark {
+  background-color: #111111;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.chart-container.dark .chart-header h2 {
+  color: #ffffff;
+}
+
+.chart-container.dark .chart-header p {
+  color: #9ca3af;
+}
+
+.chart-container.dark .MuiChartsAxis-line,
+.chart-container.dark .MuiChartsAxis-tick {
+  stroke: #525252 !important;
+}
+
+.chart-container.dark .MuiChartsAxis-tickLabel,
+.chart-container.dark .MuiChartsLegend-label,
+.chart-container.dark .MuiPieArcLabel-root {
+  fill: #f3f4f6 !important;
+}
+
+@media (max-width: 900px) {
+  .chart-container {
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    width: 98% !important;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .chart-header h2 {
+    font-size: 18px;
+  }
+}

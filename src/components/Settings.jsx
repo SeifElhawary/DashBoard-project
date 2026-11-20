@@ -7,7 +7,6 @@ function Settings() {
     const [light , setLight] =useState('light')
     setMode(light)
     useEffect(()=>{
-     
          openSetting(false);
     
     },[theme , mode])
